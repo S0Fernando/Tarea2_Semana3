@@ -22,7 +22,7 @@ ALTER TABLE detalle_pedido_2_h
 ADD id_codigo_pedido INT AUTO_INCREMENT PRIMARY KEY FIRST;
 
 
---Añadir las relaciones tabla etalle_pedido_1_h
+--Añadir las relaciones tabla Detalle_pedido_1_h
 
 ALTER TABLE `detalle_pedido_1_h` ADD  CONSTRAINT `etalle_pedido_ibfk_1_1_H` 
 FOREIGN KEY (`codigo_pedido`) REFERENCES `pedido`(`codigo_pedido`) 
@@ -32,7 +32,7 @@ ALTER TABLE `detalle_pedido_1_h` ADD  CONSTRAINT `detalle_pedido_ibfk_2_1_H`
 FOREIGN KEY (`codigo_producto`) REFERENCES `producto`(`codigo_producto`) 
 ON DELETE RESTRICT ON UPDATE RESTRICT;
 
---Añadir las relaciones tabla etalle_pedido_1_h
+--Añadir las relaciones tabla Detalle_pedido_2_h
 
 ALTER TABLE `detalle_pedido_2_h` ADD  CONSTRAINT `detalle_pedido_ibfk_1_2_H` 
 FOREIGN KEY (`codigo_pedido`) REFERENCES `pedido`(`codigo_pedido`) 
